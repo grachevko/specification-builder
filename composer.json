@@ -1,0 +1,40 @@
+{
+    "name": "premier/specification-builder",
+    "description": "Specification Builder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Grachev",
+            "email": "me@grachevko.ru"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Premier\\SpecificationBuilder\\": "src/"
+      },
+      "exclude-from-classmap": ["/tests/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Premier\\SpecificationBuilder\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "phplrt/parser": "^2.2",
+        "premier/specification": "dev-master"
+    },
+    "require-dev": {
+        "phplrt/compiler": "^2.2",
+        "phpunit/phpunit": "^8.4",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpstan/phpstan": "^0.11.19",
+        "vimeo/psalm": "^3.6",
+        "phpstan/phpstan-strict-rules": "^0.11.1",
+        "phpstan/phpstan-phpunit": "^0.11.2"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
